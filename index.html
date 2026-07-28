@@ -114,6 +114,21 @@ body{font-family:var(--sans);background:var(--bg);color:var(--fg);-webkit-font-s
 .btn-send{width:100%;padding:13px;background:var(--primary);color:white;border:none;border-radius:8px;font-family:var(--sans);font-size:14px;font-weight:600;cursor:pointer;transition:background .18s;letter-spacing:.02em}
 .btn-send:hover{background:#16304f}
 
+/* PRODUCT FAQ */
+.faq-bg{background:var(--bg);border-top:1px solid var(--border)}
+.product-faq{display:grid;gap:24px}
+.faq-card{display:grid;grid-template-columns:minmax(280px,42%) 1fr;background:var(--card);border:1px solid var(--border);border-radius:12px;overflow:hidden;box-shadow:0 8px 32px rgba(0,0,0,.05)}
+.faq-img{background:#fff;display:flex;align-items:center;justify-content:center;padding:24px;border-right:1px solid var(--border)}
+.faq-img img{width:100%;height:100%;max-height:360px;object-fit:contain;display:block}
+.faq-body{background:#eef1f4;padding:28px}
+.faq-ey{font-size:10px;font-weight:600;letter-spacing:.12em;text-transform:uppercase;color:var(--primary);margin-bottom:6px}
+.faq-name{font-family:var(--serif);font-size:22px;font-weight:500;color:var(--fg);margin-bottom:18px;line-height:1.3}
+.faq-list{display:grid;gap:14px}
+.faq-item{border-top:1px solid var(--border);padding-top:14px}
+.faq-item:first-child{border-top:0;padding-top:0}
+.faq-q{font-size:14px;font-weight:600;color:var(--fg);line-height:1.45;margin-bottom:6px}
+.faq-a{font-size:13px;color:var(--muted);line-height:1.65}
+
 /* FOOTER */
 .footer{background:var(--fg);color:white;padding:48px clamp(20px,5vw,48px) 28px}
 .ft-in{max-width:1100px;margin:0 auto}
@@ -133,6 +148,10 @@ body{font-family:var(--sans);background:var(--bg);color:var(--fg);-webkit-font-s
   .heritage-inner{grid-template-columns:1fr;gap:36px}
   .prod-grid{grid-template-columns:1fr}
   .cert-duo{grid-template-columns:1fr}
+  .faq-card{grid-template-columns:1fr}
+  .faq-img{border-right:0;border-bottom:1px solid var(--border);padding:20px}
+  .faq-img img{max-height:280px}
+  .faq-body{padding:22px}
   .contact-grid{grid-template-columns:1fr;gap:36px}
   .ft-top{grid-template-columns:1fr 1fr;gap:24px}
   .ft-bot{flex-direction:column;gap:10px;text-align:center}
@@ -153,6 +172,7 @@ body{font-family:var(--sans);background:var(--bg);color:var(--fg);-webkit-font-s
     <li><a href="#heritage">Heritage</a></li>
     <li><a href="#products">Products</a></li>
     <li><a href="#certifications">Certifications</a></li>
+    <li><a href="#product-support">Product Questions</a></li>
     <li><a href="#contact">Contact</a></li>
   </ul>
   <a href="mailto:support@navshot.co" class="nav-email">support@navshot.co</a>
@@ -278,6 +298,67 @@ body{font-family:var(--sans);background:var(--bg);color:var(--fg);-webkit-font-s
         <h4>Global Markets</h4>
         <p>Serving millions of users worldwide with reliable supply chains and robust compliance.</p>
       </div>
+    </div>
+  </div>
+</section>
+
+<!-- PRODUCT FAQ -->
+<section class="faq-bg" id="product-support">
+  <div class="sec">
+    <p class="sec-ey">Product Support</p>
+    <h2 class="sec-h">Product Questions</h2>
+    <p class="sec-p">Quick answers for disabling, re-enabling, and resetting Navshot tracking products.</p>
+    <div class="product-faq">
+      <article class="faq-card">
+        <div class="faq-img"><img src="assets/navshot-tag-finder.jpg" alt="Navshot Tag Finder"></div>
+        <div class="faq-body">
+          <p class="faq-ey">Product Support</p>
+          <h3 class="faq-name">Navshot Tag Finder</h3>
+          <div class="faq-list">
+            <div class="faq-item">
+              <div class="faq-q">How do I disable a Navshot Tag Finder?</div>
+              <div class="faq-a">The Navshot Tag Finder can be disabled to stop it from sharing its location. Once disabled, it will no longer report to Google’s Find Hub network or Apple’s Find My network, and the owner will no longer receive updates on its current location. It will also stop triggering unknown tracker alerts. If you receive a notification on your Android or iOS device indicating that a Navshot Tag Finder has been detected nearby and you are unfamiliar with this device, you can make it ring through the system notification. After locating the device, press and hold the button on the side of the Navshot Tag Finder for about 5 seconds. You will hear two confirmation beeps when it succeeds.</div>
+            </div>
+            <div class="faq-item">
+              <div class="faq-q">Can I disable it by removing the battery?</div>
+              <div class="faq-a">Use your fingernail or a small tool to open the device from the gap on the back of the Navshot Tag Finder. Carefully remove the battery. Close the Navshot Tag Finder by aligning the top holes on both lids.</div>
+            </div>
+            <div class="faq-item">
+              <div class="faq-q">How do I re-enable the Navshot Tag Finder?</div>
+              <div class="faq-a">Press the button on your Navshot Tag Finder to re-enable it. When the Navshot Tag Finder is re-enabled, you will hear a confirmation melody. If you removed the battery, place a new CR2032 coin battery inside with the positive side up, and close the device.</div>
+            </div>
+            <div class="faq-item">
+              <div class="faq-q">How do I factory reset and pair the Navshot Tag Finder?</div>
+              <div class="faq-a">To reset the Navshot Tag Finder to factory settings, press the button three times quickly and hold the fourth time for one second. After you hear a long beep, release the button. After resetting, you can pair the Navshot Tag Finder with a new Google or Apple account. When paired with an Android device, it operates as a Google Find Hub locator tag. If paired with an iOS device, it functions as an Apple Find My locator tag. For pairing, ensure Bluetooth is enabled on your phone and that it has internet access. To activate the Navshot Tag Finder, press the button once, and you will hear a melody confirming activation. You can remove the Navshot Tag Finder from either the Google Find Hub app on Android or the Find My app on iOS. If it’s within Bluetooth range, a factory reset will automatically occur upon removal from the app. If out of range, perform a manual factory reset.</div>
+            </div>
+          </div>
+        </div>
+      </article>
+      <article class="faq-card">
+        <div class="faq-img"><img src="assets/navshot-card-finder.png" alt="Navshot Card Finder"></div>
+        <div class="faq-body">
+          <p class="faq-ey">Product Support</p>
+          <h3 class="faq-name">Navshot Card Finder</h3>
+          <div class="faq-list">
+            <div class="faq-item">
+              <div class="faq-q">How do I disable a Navshot Card Finder?</div>
+              <div class="faq-a">The Navshot Card Finder can be disabled to stop it from sharing its location. Once disabled, it will no longer report to Google’s Find Hub network or Apple’s Find My network, and the owner will no longer receive updates on its current location. It will also stop triggering unknown tracker alerts. If you receive a notification on your Android or iOS device indicating that a Navshot Card Finder has been detected nearby and you are unfamiliar with this device, you can make it ring through the system notification. After locating the device, locate the button on the front of the Navshot Card Finder. Press and hold the button for four seconds. One beep will sound, then two beeps, and then three beeps.</div>
+            </div>
+            <div class="faq-item">
+              <div class="faq-q">How do I re-enable the Navshot Card Finder?</div>
+              <div class="faq-a">Press the button on your Navshot Card Finder to re-enable it. When the Navshot Card Finder is re-enabled, you will hear a confirmation beep.</div>
+            </div>
+            <div class="faq-item">
+              <div class="faq-q">How do I factory reset and pair the Navshot Card Finder?</div>
+              <div class="faq-a">To reset the Navshot Card Finder to factory settings, press the button three times quickly and hold the fourth time for one second. After you hear a long beep, release the button. After resetting, you can pair the Navshot Card Finder with a new Google or Apple account.</div>
+            </div>
+            <div class="faq-item">
+              <div class="faq-q">What important notes should I know?</div>
+              <div class="faq-a">When the Navshot Card Finder is paired with an Android device, it operates as a Google Find Hub locator card. If paired with an iOS device, it functions as an Apple Find My locator card. For pairing, ensure Bluetooth is enabled on your phone and that it has internet access. To activate the Navshot Card Finder, press the button once, and you will hear a confirming activation. You can remove the Navshot Card Finder from either the Google Find Hub app on Android or the Find My app on iOS. If it’s within Bluetooth range, a factory reset will automatically occur upon removal from the app. If out of range, perform a manual factory reset.</div>
+            </div>
+          </div>
+        </div>
+      </article>
     </div>
   </div>
 </section>
